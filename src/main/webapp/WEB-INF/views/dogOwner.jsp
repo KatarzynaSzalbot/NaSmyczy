@@ -16,36 +16,30 @@
     <link href="<c:url value="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
 </head>
-<body>
+<body class="dogowner">
 
-<br/>
+
 <div class="container">
 
-    <header>Rejestracja</header>
-    <div class="card">
-
-            <a href="/" class="btn btn-primary">Back</a>
-
-
-    </div>
-    <br>
-    <div class="card-body">
 <form:form method="post" modelAttribute="dogOwnerM">
-    <div class="row>">
-    <div class="form-group">
+    <header>Rejestracja</header>
+
     <label for="firstNameId">Imię:</label>
-    <form:input type="text" path="firstName" id="firstNameId" class="form=control"/>
-    </div>
-    <div class="form-group">
+    <form:input type="text" path="firstName" id="firstNameId" class="form=control"/><br/><br/>
+
+
     <label for="lastNameId">Nazwisko:</label>
     <form:input type="text" path="lastName" id="lastNameId" class="form=control"/><br/><br/>
-    </div>
+
     <label for="loginId">Login:</label>
     <form:input type="text" path="login" id="loginId"/><br/><br/>
 
+        <label for="passwordId">Hasło:</label>
+        <form:input type="text" path="password" id="passwordId"/><br/><br/>
+
     <label for="emailId">Email:</label>
     <form:input type="text" path="email" id="emailId"/><br/><br/>
-    </div>
+
     <label for="maleId">Mężczyzna:</label>
     <form:radiobutton path="gender" value="M" id="maleId"/>
     <label for="femaleId">Kobieta:</label>
@@ -71,6 +65,6 @@
     <input type="submit" value="Zapisz">
 </form:form>
     </div>
-</div>
+
 </body>
 </html>

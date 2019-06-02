@@ -15,16 +15,16 @@
     <link href="<c:url value="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
 </head>
-<body>
+<body class="home">
 <div class="container">
     <audio controls autoplay>
         <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
         <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-<h1>NA SMYCZY</h1>
+    <h1>NA SMYCZY</h1>
 
-<p>Tutaj będzie tekst</p>
+    <p>Tutajscnskcnskjdbc będzie tekst</p>
     <br>
     <br>
     <br>
@@ -40,17 +40,36 @@
     <br>
     <br>
     <br>
-<div class="card">
-<input value="Jestem właścicielem psa">
-</div>
-<a href="/offers/add"class="btn btn-info">Zaloguj się</a>
-<a href="/formdogowner/add"class="btn btn-success">Zarejestruj się</a>
-    <div class="card">
-<input value="Chcę wyprowadzić psa">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="card1">
+         <div class="div1">
+        <input value="Jestem właścicielem psa">
+         </div>
+        <a href="/login" class="btn btn-info">Zaloguj się</a>
+        <a href="/formdogowner/add" class="btn btn-success">Zarejestruj się</a>
+
     </div>
-<input type="submit" class="btn btn-primary" value="Zaloguj się">
-<a href="/formdogfriend/add" class="btn btn-secondary">Zarejestruj się</a>
+    <div class="card2">
+        <div class="div1">
+        <input value="Chcę wyprowadzić psa">
+        </div>
+        <a href="/login" class="btn btn-primary">Zaloguj się</a>
+        <a href="/formdogfriend/add" class="btn btn-secondary">Zarejestruj się</a>
 
+    </div>
 </div>
 </body>
 </html>

@@ -33,4 +33,8 @@ public class DogOwnerService {
     public void deleteDogOwner(Long id) {
         dogOwnerDao.deleteDogOwner (id);
     }
+
+//    public DogOwner findByLogin(String login) {
+//        return DogOwnerDao.findByLogin(login);
+//    }
 }

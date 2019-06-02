@@ -5,13 +5,20 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 
 @Repository
 public class DogOwnerDao {
 
+
     @PersistenceContext
     private EntityManager entityManager;
+
+//    public  DogOwner findByLogin(String login) {
+//        Query query = entityManager.createQuery ("select b from dogOwners where b.login = true");
+//        return query;
+//    }
 
     public void saveDogOwner(DogOwner dogOwner) {
         entityManager.persist(dogOwner);

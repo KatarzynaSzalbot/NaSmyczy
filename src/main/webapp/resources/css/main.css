@@ -1,11 +1,67 @@
-body {
+.home {
     background-color: #eee;
-    background-image: url("../img/Tiger.jpg");
+    background-image: url(../img/Tiger.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 1000px;
+}
+.container{
+    padding-left: 15px;
+}
+h1 {
+    font-size: 5.5rem;
+    color: green;
+}
+.card1 {
+    float: left;
+    font-size: x-large;
 
+}
+.div1 {
+    background-color: yellow;
+}
+.card2 {
+    float: right;
+    font-size: x-large;
+}
 
+.dogowner {
+    background-color: #eee;
+    background-image: url("../img/Chow_chow.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 1000px;
+}
+
+.offer {
+    background-color: #eee;
+    background-image: url("../img/dog.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 1000px;
+}
+.respond {
+    background-color: #eee;
+    background-image: url("../img/owczarek_niemiecki.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 1000px;
+}
+
+.login {
+    background-color: #eee;
+    background-image: url("../img/husky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 1000px;
+}
+
+.friend {
+    background-color: #eee;
+    background-image: url("../img/Dalmatynczyk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 1000px;
 }
 
 .error {
