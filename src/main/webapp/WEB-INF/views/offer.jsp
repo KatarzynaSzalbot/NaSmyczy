@@ -17,7 +17,20 @@
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
 </head>
 <body class="offer">
-<h1>Tutaj możesz zostawić swoją wiadomość o możliwości wyprowadzenia Twojego psa</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<h1 id="tytul">Tutaj możesz zostawić swoją wiadomość o możliwości wyprowadzenia Twojego psa</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <div class="container">
     <div class="card-body">
 <form:form method="post" modelAttribute="offerM">

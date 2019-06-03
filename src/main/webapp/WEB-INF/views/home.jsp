@@ -25,51 +25,33 @@
     <h1>NA SMYCZY</h1>
 
     <p>Tutajscnskcnskjdbc będzie tekst</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="card1">
-         <div class="div1">
-        <input value="Jestem właścicielem psa">
-         </div>
-        <a href="/login" class="btn btn-info">Zaloguj się</a>
-        <a href="/formdogowner/add" class="btn btn-success">Zarejestruj się</a>
 
-    </div>
-    <div class="card2">
-        <div class="div1">
-        <input value="Chcę wyprowadzić psa">
-        </div>
-        <a href="/login" class="btn btn-primary">Zaloguj się</a>
-        <a href="/formdogfriend/add" class="btn btn-secondary">Zarejestruj się</a>
-
-    </div>
 </div>
+<footer class="footer sticky-bottom">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="card1">
+                    <div class="div1">
+                        Jestem właścicielem psa
+                    </div>
+                    <a href="/login" class="btn btn-info">Zaloguj się</a>
+                    <a href="/formdogowner/add" class="btn btn-success">Zarejestruj się</a>
+
+                </div>
+                <div class="card2">
+                    <div class="div1">
+                        Chcę wyprowadzić psa
+
+                    </div>
+                    <a href="/login" class="btn btn-primary">Zaloguj się</a>
+                    <a href="/formdogfriend/add" class="btn btn-secondary">Zarejestruj się</a>
+
+                </div>
+            </div>
+        </div>
+</footer>
 </body>
 </html>

@@ -14,14 +14,14 @@ private DogOwnerService dogOwnerService;
         this.dogOwnerService = dogOwnerService;
     }
 
-    @GetMapping("/add")
+    @GetMapping(value="/add", produces = "text/html; charset=UTF-8")
     public String add(Model model) {
         model.addAttribute ("dogOwnerM", new DogOwner ());
         return "dogOwner";
     }
 
 
-    @PostMapping("/add") //czy to jest metoda odpowiedzialna za zapisywanie do bazy?
+    @PostMapping("/add")
     public String add(@ModelAttribute DogOwner dogOwner) {
         dogOwnerService.saveDogOwner(dogOwner);
         return "redirect:../offers/add";

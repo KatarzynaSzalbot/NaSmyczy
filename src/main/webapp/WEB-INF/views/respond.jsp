@@ -16,6 +16,8 @@
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
 </head>
 <body class="respond">
-<h1>Dziękuję za dodanie wiadomości</h1>
+<br/>
+<br/>
+<h1 id="respond">Dziękuję za dodanie wiadomości</h1>
 </body>
 </html>

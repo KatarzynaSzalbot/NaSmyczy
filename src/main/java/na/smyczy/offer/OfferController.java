@@ -30,4 +30,10 @@ public class OfferController {
         return "respond";
     }
 
+    @GetMapping("/bufor")
+    public String bufor(Model model) {
+        model.addAttribute("bufor", new Offer ());
+        return "bufor";
+    }
+
 }

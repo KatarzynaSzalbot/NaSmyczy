@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Kasia
@@ -9,8 +11,18 @@
 <html>
 <head>
     <title>Tutaj możesz znaleźć psa</title>
+    <script src="<c:url value="/webjars/jquery/3.0.0/jquery.min.js"/>"></script>
+    <script src="<c:url value="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"/>"></script>
+    <link href="<c:url value="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
 </head>
-<body>
+<body class="bufor">
 
+     <label for="dateId">Wpisz teraz kiedy chciałbyś wyprowadzić psa:</label>
+     <form:input type="date" path="date" id="dateId"/>
+
+     <input type="submit" value="Szukaj" class="btn btn-info">
+
+  <p>Oto Twoje możliwości wyprowadzenia psa:</p>
 </body>
 </html>

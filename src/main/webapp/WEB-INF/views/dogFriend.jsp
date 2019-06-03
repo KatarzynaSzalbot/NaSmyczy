@@ -31,7 +31,7 @@
     <br/>
     <br/>
 
-<form:form method="post" modelAttribute="dogFriendM">
+<form:form method="post" modelAttribute="dogFriendM" id="friend">
     <label for="firstNameId">Imię:</label>
     <form:input type="text" path="firstName" id="firstNameId"/>
     <br/><br/>
