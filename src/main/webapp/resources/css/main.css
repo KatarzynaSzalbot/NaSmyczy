@@ -23,6 +23,7 @@ h1 {
 p {
     text-align: center;
     color: orange;
+    font-size: 2.5rem;
 }
 
 .card1 {
@@ -32,6 +33,8 @@ p {
 }
 .div1 {
     background-color: orange;
+    width: 280;
+    text-align: center;
 }
 .card2 {
     float: right;
@@ -76,12 +79,17 @@ p {
     background-position: center;
     background-size: cover;
 }
+.bufor1 {
+    padding-left: 45px;
+}
+
 .bufor {
     background-color: #eee;
     background-image: url("../img/mops.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-left: 15px;
 }
 
 .error {
@@ -108,6 +116,11 @@ header {
 .navbar-blue a:hover {
     background: rgba(0, 0, 0, .1);
 }
+#maleId, #femaleId, #sizeId {
+    width: 150px;
+    font-weight: bolder;
+}
+
 #dogOwnerM label,
 #friend label{
     width: 290px;
@@ -120,15 +133,23 @@ input{
 }
 label {
     font-size: x-large;
+    font-weight: bold;
 }
-#maleId  #femaleId {
-    width: 50px;
-}
-#tytul{
-    font-size: 3.5rem;
-    color: deeppink;
+
+
+h2 {
+    font-size: 3rem;
+    position: absolute;
+    color: blue;
+    text-align: center;
 }
 #respond{
     font-size: 4.5rem;
-    color: saddlebrown;
+    color: gold;
+}
+.koniec{
+    color:deeppink;
+}
+#choice{
+    color:red;
 }

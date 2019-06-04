@@ -24,7 +24,7 @@
 <br/>
 
 
-<h1 id="tytul">Tutaj możesz zostawić swoją wiadomość o możliwości wyprowadzenia Twojego psa</h1>
+<h2 id="tytul">Tutaj możesz zostawić swoją wiadomość o możliwości wyprowadzenia Twojego psa. Proszę podaj numer telefonu.</h2>
 <br/>
 <br/>
 <br/>
@@ -40,7 +40,7 @@
 <br>
 
 <label for="dateId">Data:</label>
- <form:input type="date" rows="3" cols="20" path="date" id="dateId"/>
+ <form:input type="date" rows="3" cols="20" path="date" id="dateId"/><br>
 
 <label for="timeId">Na jak długo(w minutach)</label>
     <form:input type="number" path="time" id="timeId"/>

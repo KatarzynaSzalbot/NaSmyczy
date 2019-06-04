@@ -69,7 +69,7 @@
                 </c:if>
 
                 <input type="submit" value="Zaloguj się" class="btn btn-info">
-                <a href="/formdogowner/add" class="btn btn-success">Register</a>
+                <a href="/formdogowner/add" class="btn btn-success">Rejestracja</a>
 
 
 

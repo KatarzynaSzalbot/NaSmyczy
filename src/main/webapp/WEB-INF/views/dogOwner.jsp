@@ -22,7 +22,7 @@
 <div class="container">
 
 <form:form method="post" modelAttribute="dogOwnerM">
-    <header>Rejestracja</header>
+    <header>Rejestracja Właściciela Psa</header>
 
     <label for="firstNameId">Imię:</label>
     <form:input type="text" path="firstName" id="firstNameId" class="form=control"/><br/><br/>
@@ -55,9 +55,9 @@
     <form:input type="text" path="dogBreed" id="dogBreedId"/><br/><br/>
 
     <label for="sizeId">Mały:</label>
-    <form:radiobutton path="size" value="SMALL" id="sizeId"/>
-    <label for="sizeId">średni:</label>
-    <form:radiobutton path="size" value="MIDDLE" id="sizeId"/>
+    <form:radiobutton path="size" value="SMALL" id="sizeId"/><br>
+    <label for="sizeId">Średni:</label>
+    <form:radiobutton path="size" value="MIDDLE" id="sizeId"/><br>
     <label for="sizeId">Duży:</label>
     <form:radiobutton path="size" value="BIG" id="sizeId"/>
     <br/><br/>

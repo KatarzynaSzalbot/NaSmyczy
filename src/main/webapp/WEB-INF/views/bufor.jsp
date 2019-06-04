@@ -19,21 +19,34 @@
 <body class="bufor">
 
 <form method="post">
-
+     <div class="oferta">
     <label for="dateId">Wpisz teraz kiedy chciałbyś wyprowadzić psa:</label>
     <input type="date" name="date" id="dateId"/>
 
     <input type="submit" value="Szukaj" class="btn btn-info">
+     </div>
 </form>
 
     <p>Oto Twoje możliwości wyprowadzenia psa:</p>
-    <c:forEach items="${offers}" var="offer">
+    <div class="bufor1">
+        <c:forEach items="${offers}" var="offer">
         <tr>
             <td>${offer.date}</td>
-            <td>${offer.message}</td>
+            <td>Wiadomość:${offer.message}</td>
 
         </tr>
     </c:forEach>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="koniec">Po wybraniu przez Ciebie psa, zadzwoń do Właściciela i ciesz się spacerem:):)</p>
 
 </body>
 </html>

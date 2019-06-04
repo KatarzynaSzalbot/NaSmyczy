@@ -19,17 +19,10 @@
 </head>
 <body class="friend">
 <div class="container">
-<header>Rejestracja dla wyprowadzaczy psa</header>
-<br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+<header>Rejestracja Wyprowadzacza Psa</header>
+
+
+
 
 <form:form method="post" modelAttribute="dogFriendM" id="friend">
     <label for="firstNameId">Imię:</label>

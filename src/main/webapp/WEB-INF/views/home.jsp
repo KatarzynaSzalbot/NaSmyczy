@@ -24,7 +24,11 @@
     </audio>
     <h1>NA SMYCZY</h1>
 
-    <p>Tutajscnskcnskjdbc będzie tekst</p>
+    <p>Witamy na stronie NA SMYCZY <br>
+    Jeżeli masz psa ALBO<br>
+    nie masz psa ALE uwielbiasz te czworonogi<br>
+    to jesteś w dobrym miejscu!<br></p>
+    <p id="choice">Wybierz kim jesteś:</p>
 
 </div>
 <footer class="footer sticky-bottom">

@@ -18,6 +18,6 @@
 <body class="respond">
 <br/>
 <br/>
-<h1 id="respond">Dziękuję za dodanie wiadomości</h1>
+<h1 id="respond">Dziękuję za dodanie wiadomości. Jeżeli znajdzie się wyprowadzacz, który będzie zainteresowany Twoją ofertą, zadzwoni do Ciebie.</h1>
 </body>
 </html>
