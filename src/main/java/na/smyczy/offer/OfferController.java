@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping ("/offers")
 public class OfferController {
@@ -32,7 +34,13 @@ public class OfferController {
 
     @GetMapping("/bufor")
     public String bufor(Model model) {
-        model.addAttribute("bufor", new Offer ());
+        return "bufor";
+    }
+
+    @PostMapping("/bufor")
+    public String findOfferByDate(@RequestParam String date, Model model){
+        List<Offer> offers = offerService.findByDate(date);
+        model.addAttribute ("offers", offers);
         return "bufor";
     }
 

@@ -4,13 +4,11 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-
-
+import java.util.List;
 
 
 @Repository
 public class OfferDao {
-
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -32,4 +30,9 @@ public class OfferDao {
             entityManager.remove(offer);
         }
     }
+
+    List<Offer> findByDate(String date){
+        return entityManager.createQuery ("select o from Offer o where o.date = :date", Offer.class).setParameter ("date",date).getResultList ();
+    }
+
 }

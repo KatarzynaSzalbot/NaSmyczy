@@ -18,11 +18,22 @@
 </head>
 <body class="bufor">
 
-     <label for="dateId">Wpisz teraz kiedy chciałbyś wyprowadzić psa:</label>
-     <form:input type="date" path="date" id="dateId"/>
+<form method="post">
 
-     <input type="submit" value="Szukaj" class="btn btn-info">
+    <label for="dateId">Wpisz teraz kiedy chciałbyś wyprowadzić psa:</label>
+    <input type="date" name="date" id="dateId"/>
 
-  <p>Oto Twoje możliwości wyprowadzenia psa:</p>
+    <input type="submit" value="Szukaj" class="btn btn-info">
+</form>
+
+    <p>Oto Twoje możliwości wyprowadzenia psa:</p>
+    <c:forEach items="${offers}" var="offer">
+        <tr>
+            <td>${offer.date}</td>
+            <td>${offer.message}</td>
+
+        </tr>
+    </c:forEach>
+
 </body>
 </html>

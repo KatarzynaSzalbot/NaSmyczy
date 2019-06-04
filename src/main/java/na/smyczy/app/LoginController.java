@@ -27,20 +27,20 @@ public class LoginController {
         return "login";
     }
 
-//    @PostMapping("/")
-//    public String login(@RequestParam String login, @RequestParam String password, Model model) {
-//        DogOwner dogOwner = dogOwnerService.findByLogin(login);
-//        model.addAttribute("isLogged", false);
-//        if (dogOwner == null) {
-//            return "login";
-//        }
-//        if (BCrypt.checkpw(password, dogOwner.getPassword())) {
-//            model.addAttribute("userSession", dogOwner);
-//            model.addAttribute("isLogged", true);
-//            return "redirect:../offers/add";
-//        }
-//        return "login";
-//    }
+    @PostMapping("/login")
+    public String login(@RequestParam String login, @RequestParam String password, Model model) {
+        DogOwner dogOwner = dogOwnerService.findByLogin(login);
+        model.addAttribute("isLogged", false);
+        if (dogOwner == null) {
+            return "login";
+        }
+        if (BCrypt.checkpw(password, dogOwner.getPassword())) {
+            model.addAttribute("userSession", dogOwner);
+            model.addAttribute("isLogged", true);
+            return "redirect:/offers/add";
+        }
+        return "login";
+    }
 
 }
 

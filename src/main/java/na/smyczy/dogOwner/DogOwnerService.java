@@ -1,6 +1,7 @@
 package na.smyczy.dogOwner;
 
 import org.hibernate.Hibernate;
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +18,7 @@ public class DogOwnerService {
     }
 
     public void saveDogOwner(DogOwner dogOwner) {
+        dogOwner.setPassword(BCrypt.hashpw(dogOwner.getPassword(), BCrypt.gensalt()));
         dogOwnerDao.saveDogOwner (dogOwner);
     }
 
@@ -34,7 +36,7 @@ public class DogOwnerService {
         dogOwnerDao.deleteDogOwner (id);
     }
 
-//    public DogOwner findByLogin(String login) {
-//        return DogOwnerDao.findByLogin(login);
-//    }
+    public DogOwner findByLogin(String login) {
+        return dogOwnerDao.findByLogin(login);
+    }
 }

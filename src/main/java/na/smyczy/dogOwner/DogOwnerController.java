@@ -24,6 +24,6 @@ private DogOwnerService dogOwnerService;
     @PostMapping("/add")
     public String add(@ModelAttribute DogOwner dogOwner) {
         dogOwnerService.saveDogOwner(dogOwner);
-        return "redirect:../offers/add";
+        return "redirect:/offers/add";
     }
 }

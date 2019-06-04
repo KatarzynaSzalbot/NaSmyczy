@@ -15,10 +15,11 @@ public class DogOwnerDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-//    public  DogOwner findByLogin(String login) {
-//        Query query = entityManager.createQuery ("select b from dogOwners where b.login = true");
-//        return query;
-//    }
+    public  DogOwner findByLogin(String login) {
+        Query query = entityManager.createQuery ("select b from DogOwner b where b.login = :login");
+        query.setParameter ("login", login);
+        return (DogOwner) query.getSingleResult ();
+    }
 
     public void saveDogOwner(DogOwner dogOwner) {
         entityManager.persist(dogOwner);

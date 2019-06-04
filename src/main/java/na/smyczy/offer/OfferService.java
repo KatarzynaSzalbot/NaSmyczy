@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.awt.print.Book;
+import java.util.List;
 
 @Service
 @Transactional
@@ -31,5 +32,9 @@ public class OfferService {
 
     public void deleteOffer(Long id) {
         offerDao.deleteOffer(id);
+    }
+
+    public List<Offer> findByDate(String date){
+        return offerDao.findByDate (date);
     }
 }

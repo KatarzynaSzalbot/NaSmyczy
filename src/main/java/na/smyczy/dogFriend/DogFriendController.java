@@ -26,7 +26,7 @@ public class DogFriendController {
     }
 
 
-    @PostMapping("/add") //czy to jest metoda odpowiedzialna za zapisywanie do bazy?
+    @PostMapping("/add")
     public String add(@ModelAttribute DogFriend dogFriend) {
         dogFriendService.saveDogFriend (dogFriend);
         return "redirect:../offers/bufor";

@@ -11,7 +11,8 @@ public class DogFriendService {
 
     private DogFriendDao dogFriendDao;
 
-    public DogFriendService(DogFriendDao dogFriendDaoDao) {
+    public DogFriendService(DogFriendDao dogFriendDao) {
+
         this.dogFriendDao = dogFriendDao;
     }
 
